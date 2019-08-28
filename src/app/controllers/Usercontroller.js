@@ -23,7 +23,6 @@ class UserController {
 
   async update(req, res) {
     const { email, oldPassword } = req.body;
-    console.log('aki->', req.body);
 
     const user = await User.findByPk(req.userId);
 
